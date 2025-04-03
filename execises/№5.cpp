@@ -34,5 +34,8 @@ int reverse(int x) {
 	catch (const std::out_of_range& e) {
 		return 0;
 	}
+	catch (const std::invalid_argument& e){
+            return 0;
+        }
 	return x_r;
 }
